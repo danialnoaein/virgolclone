@@ -1,6 +1,9 @@
+import { useParams } from "react-router-dom";
+
 const Author = () => {
+    const {id} = useParams()
     return ( <>
-    <div>Author</div></> );
+    <div>Author {id}</div></> );
 }
  
 export default Author;
